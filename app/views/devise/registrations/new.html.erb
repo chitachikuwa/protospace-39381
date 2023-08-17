@@ -12,12 +12,12 @@
     <%= f.label :"パスワード(6文字以上)" %>
     <% if @minimum_password_length %>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "password" %>
+    <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
     <%= f.label :パスワード再入力 %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "password_confirmation" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
  
   <div class="field">
